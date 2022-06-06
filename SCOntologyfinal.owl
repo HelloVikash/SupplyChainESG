@@ -1,0 +1,2133 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ey.org/ontologies/SupplyChain"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ey.org/ontologies/SupplyChain">
+    <Prefix name="" IRI="http://www.ey.org/ontologies/SupplyChain"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#Account"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AccountType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdditionalDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForCompetition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DescriptiveDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DnBSupplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighVolumeOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvoiceDetails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvoiceHeader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowVolumeOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaymentTerm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcurementDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcurementProcedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcurementValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProfitCostCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseOrderHeader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurchaseOrderLineDetail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReviewTerms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TenderDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UOM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#addressId"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attachesDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccountIdentfier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAmount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContract"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDocumentIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInvoice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaymentTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcurementDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcurementIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcurementValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProfitCostCenter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReviewTerms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTotalQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUOMCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValidityPeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#procurementDocumentRefersTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suppliesItem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesAccountType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesCurrencyType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LPANumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acquisitionMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acquisitionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#addressLine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#addressType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#class"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#classTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commodityTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contractValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currencyCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbBusinessName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbGlobalUltimateBusinessName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbGlobalUltimateCountryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbGlobalUltimateDUNS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbHeaderquartersDUNS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbHeadquartersBusinessName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbParentDUNS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbParentbusinessName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbStandardIndustryClassfication"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#departmentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionOfGoodsAndServices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dunsNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#durationFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#durationTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#executionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expiryDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#family"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#familyTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fiscalYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geoCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geoEntityName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geoName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geoURI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#globalUltimateParentDUNS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#globalUltimateParentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hazardousMaterialIndicator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemListPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemListPriceCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemListPriceLocalCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemListPriceUsed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemUOM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itemWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#legalCompanyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#localAuthorityDirectorateOrServiceResponsible"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manufacturerName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#normalizedUNSPSC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#organisationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#paymentTermCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#paymentTermDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#period"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poDiscountAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poHeaderStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poItemPriceLocl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poItemPriceUsed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poItemQuantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poItemUOM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#poStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#postalCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#purchaseDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#purchaseOrderID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#renewalType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reportingPeriodType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requisitionNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reviewDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#segment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#segmentTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spendCategory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#state"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#supplierKey"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#supplierNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#supplierSiteCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#supplierSiteName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#supplierStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taxID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titleOfTheAgreement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unitPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BWK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CAD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DAY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ML"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MTH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PKG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YR"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Account"/>
+        <Class IRI="#Party"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdditionalDocument"/>
+        <Class IRI="#ProcurementDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#addressId"/>
+            <Class IRI="#Address"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessUnit"/>
+        <Class IRI="#Party"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForCompetition"/>
+        <Class IRI="#ProcurementDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Party"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contract"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractConditions"/>
+        <Class IRI="#ProcurementDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DescriptiveDocument"/>
+        <Class IRI="#ProcurementDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnBSupplier"/>
+        <Class IRI="#Supplier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighVolumeOrder"/>
+        <Class IRI="#PurchaseOrder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invoice"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvoiceDetails"/>
+        <Class IRI="#Invoice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvoiceHeader"/>
+        <Class IRI="#Invoice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Item"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowVolumeOrder"/>
+        <Class IRI="#PurchaseOrder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Party"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaymentTerm"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Procurement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcurementDocument"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcurementProcedure"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcurementValue"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProfitCostCenter"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrder"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrder"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#supplierKey"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrderHeader"/>
+        <Class IRI="#PurchaseOrder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurchaseOrderLineDetail"/>
+        <Class IRI="#PurchaseOrder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supplier"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TenderDocument"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tier"/>
+        <Class IRI="#Procurement"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BWK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#BY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CAD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#CY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#DA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#DAY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#DR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#DZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#EA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#FL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#FO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#FT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#GA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#GS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#HC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#HYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#IN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#KG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#KH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#KIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#KM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#KT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#LB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#LF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#LH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#LT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#ML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#MM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#MO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#MR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#MTH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#OZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PKG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#PT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#QR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#QT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#QTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#RL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#RM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#SY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#TB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#TH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#UN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#WK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#YD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UOM"/>
+        <NamedIndividual IRI="#YR"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasContract"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPaymentTerm"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcurementDocument"/>
+        <ObjectProperty IRI="#procurementDocumentRefersTo"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#addressId"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#attachesDocument"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccount"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccountIdentfier"/>
+        <Class IRI="#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAmount"/>
+        <Class IRI="#ProcurementValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBusinessUnit"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContract"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDocumentIdentifier"/>
+        <Class IRI="#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaymentTerm"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcurementDocument"/>
+        <Class IRI="#ProcurementProcedure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcurementIdentifier"/>
+        <Class IRI="#Procurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcurementValue"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProfitCostCenter"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+        <Class IRI="#PaymentTerm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReviewTerms"/>
+        <Class IRI="#ProcurementProcedure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTier"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTotalQuantity"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUOMCode"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasValidityPeriod"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#procurementDocumentRefersTo"/>
+        <Class IRI="#ProcurementDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesAccountType"/>
+        <Class IRI="#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesCurrencyType"/>
+        <Class IRI="#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#addressId"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#attachesDocument"/>
+        <Class IRI="#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccount"/>
+        <Class IRI="#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccountIdentfier"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAmount"/>
+        <Class IRI="#Amount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBusinessUnit"/>
+        <Class IRI="#BusinessUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContract"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDocumentIdentifier"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPaymentTerm"/>
+        <Class IRI="#PaymentTerm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcurementDocument"/>
+        <Class IRI="#ProcurementDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcurementIdentifier"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcurementValue"/>
+        <Class IRI="#ProcurementValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProfitCostCenter"/>
+        <Class IRI="#ProfitCostCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurchaseOrder"/>
+        <Class IRI="#PurchaseOrder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReviewTerms"/>
+        <Class IRI="#ReviewTerms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTier"/>
+        <Class IRI="#Tier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTotalQuantity"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUOMCode"/>
+        <Class IRI="#UOM"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasValidityPeriod"/>
+        <Class IRI="#Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#procurementDocumentRefersTo"/>
+        <Class IRI="#ProcurementProcedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suppliesItem"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesAccountType"/>
+        <Class IRI="#AccountType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesCurrencyType"/>
+        <Class IRI="#Currency"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LPANumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#acquisitionMethod"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#acquisitionType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#addressLine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#addressType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#city"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#class"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#classTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#commodityTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#contractStartDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#contractValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#country"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#creationDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#departmentName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descriptionOfGoodsAndServices"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#durationFrom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#durationTo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#endDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#family"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#familyTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fiscalYear"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#geoCode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#geoEntityName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#geoName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#geoURI"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#itemDescription"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#itemName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#latitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#legalCompanyName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#localAuthorityDirectorateOrServiceResponsible"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#locationId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#normalizedUNSPSC"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#organisationName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#paymentTermCode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#period"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#postalCode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#purchaseDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#quantity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#reportingPeriodType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#requisitionNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#reviewDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#segment"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#segmentTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#state"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#supplierKey"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#supplierStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taxID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#titleOfTheAgreement"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#totalPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#unitPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#supplierKey"/>
+        <Class IRI="#Contract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#supplierKey"/>
+        <Class IRI="#PurchaseOrder"/>
+    </DataPropertyDomain>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantity"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#PurchaseOrder"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThanOrEqual">
+                <Variable IRI="urn:swrl:var#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighVolumeOrder"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#quantity"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#PurchaseOrder"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#LowVolumeOrder"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Account</IRI>
+        <Literal>Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BA</IRI>
+        <Literal xml:lang="en">Bale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BD</IRI>
+        <Literal xml:lang="en">Bundle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BG</IRI>
+        <Literal xml:lang="en">Bag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BK</IRI>
+        <Literal xml:lang="en">Book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BO</IRI>
+        <Literal xml:lang="en">Bottle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BR</IRI>
+        <Literal xml:lang="en">Barrell - Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BWK</IRI>
+        <Literal xml:lang="en">Bi-Weekly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BX</IRI>
+        <Literal xml:lang="en">Box</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#BY</IRI>
+        <Literal xml:lang="en">British Thermal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BusinessUnit</IRI>
+        <Literal>BusinessUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CA</IRI>
+        <Literal xml:lang="en">Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CAD</IRI>
+        <Literal xml:lang="en">Canada Dollars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CF</IRI>
+        <Literal xml:lang="en">Cu Ft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CI</IRI>
+        <Literal xml:lang="en">Cubic Inches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CO</IRI>
+        <Literal xml:lang="en">Cu M</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CT</IRI>
+        <Literal xml:lang="en">Carton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#CY</IRI>
+        <Literal xml:lang="en">Cu Yd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Company</IRI>
+        <Literal>Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contract</IRI>
+        <Literal>Contract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#DA</IRI>
+        <Literal xml:lang="en">Days</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#DAY</IRI>
+        <Literal xml:lang="en">Daily</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#DR</IRI>
+        <Literal xml:lang="en">Drum - 55 Gallon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#DZ</IRI>
+        <Literal xml:lang="en">Dozen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DnBSupplier</IRI>
+        <Literal>DnBSupplier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#EA</IRI>
+        <Literal xml:lang="en">Each</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#FL</IRI>
+        <Literal xml:lang="en">Full Truck Load</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#FO</IRI>
+        <Literal xml:lang="en">Ounces - Fluid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#FT</IRI>
+        <Literal xml:lang="en">Feet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#GA</IRI>
+        <Literal xml:lang="en">Gallon - Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#GS</IRI>
+        <Literal xml:lang="en">Gross</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#HC</IRI>
+        <Literal xml:lang="en">Hundreds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#HYR</IRI>
+        <Literal xml:lang="en">Half Yearly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#IN</IRI>
+        <Literal xml:lang="en">Inches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InvoiceDetails</IRI>
+        <Literal>InvoiceDetails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InvoiceHeader</IRI>
+        <Literal>InvoiceHeader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Item</IRI>
+        <Literal>Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#KG</IRI>
+        <Literal xml:lang="en">Kilograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#KH</IRI>
+        <Literal xml:lang="en">Kilowatt Hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#KM</IRI>
+        <Literal xml:lang="en">Kilometers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#KT</IRI>
+        <Literal xml:lang="en">Kit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#LB</IRI>
+        <Literal xml:lang="en">Pounds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#LF</IRI>
+        <Literal xml:lang="en">LINEAR FOOT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#LH</IRI>
+        <Literal xml:lang="en">Work Hour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#LT</IRI>
+        <Literal xml:lang="en">Liter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#ML</IRI>
+        <Literal xml:lang="en">Milliliter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#MM</IRI>
+        <Literal xml:lang="en">Millimeter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#MO</IRI>
+        <Literal xml:lang="en">Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#MR</IRI>
+        <Literal xml:lang="en">Meters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#MTH</IRI>
+        <Literal xml:lang="en">Monthly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#OZ</IRI>
+        <Literal xml:lang="en">Ounces - dry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PD</IRI>
+        <Literal xml:lang="en">Pad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PK</IRI>
+        <Literal xml:lang="en">Pack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PKG</IRI>
+        <Literal xml:lang="en">PACKAGE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PL</IRI>
+        <Literal xml:lang="en">Pallet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PR</IRI>
+        <Literal xml:lang="en">Pair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#PT</IRI>
+        <Literal xml:lang="en">Pint - Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaymentTerm</IRI>
+        <Literal>PaymentTerm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Procurement</IRI>
+        <Literal>Procurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProfitCostCenter</IRI>
+        <Literal>ProfitCostCenter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PurchaseOrderHeader</IRI>
+        <Literal>PurchaseOrderHeader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PurchaseOrderLineDetail</IRI>
+        <Literal>PurchaseOrderLineDetail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#QR</IRI>
+        <Literal xml:lang="en">Work Quarter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#QT</IRI>
+        <Literal xml:lang="en">Quart - Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#QTR</IRI>
+        <Literal xml:lang="en">Quarterly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#RL</IRI>
+        <Literal xml:lang="en">Roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#RM</IRI>
+        <Literal xml:lang="en">Ream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SB</IRI>
+        <Literal xml:lang="en">Sq Mile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SC</IRI>
+        <Literal xml:lang="en">Sq CM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SF</IRI>
+        <Literal xml:lang="en">Square Foot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SH</IRI>
+        <Literal xml:lang="en">Sheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SI</IRI>
+        <Literal xml:lang="en">Sq In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SL</IRI>
+        <Literal xml:lang="en">Sleeve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SM</IRI>
+        <Literal xml:lang="en">Sq M</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SO</IRI>
+        <Literal xml:lang="en">SPOOL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#ST</IRI>
+        <Literal xml:lang="en">Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#SY</IRI>
+        <Literal xml:lang="en">Sq Yard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Supplier</IRI>
+        <Literal>Supplier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#TB</IRI>
+        <Literal xml:lang="en">Tube</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#TH</IRI>
+        <Literal xml:lang="en">Thousand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#UN</IRI>
+        <Literal xml:lang="en">Units</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#USD</IRI>
+        <Literal xml:lang="en">US Dollars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#WK</IRI>
+        <Literal xml:lang="en">Work Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#YD</IRI>
+        <Literal xml:lang="en">Yard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#UnitOfMeasure"/>
+        <IRI>#YR</IRI>
+        <Literal xml:lang="en">Person Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasContract</IRI>
+        <Literal>hasContract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentTerm</IRI>
+        <Literal>hasPaymentTerm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPurchaseOrder</IRI>
+        <Literal>hasPurchaseOrder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#suppliesItem</IRI>
+        <Literal>hasItem</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
